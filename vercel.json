@@ -2,10 +2,12 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "services": {
     "swa_backend": {
-      "root": "SWA_BACKEND"
+      "root": "SWA_BACKEND",
+      "framework": "express"
     },
     "swa_frontend": {
-      "root": "SWA_FRONTEND"
+      "root": "SWA_FRONTEND",
+      "framework": "vite"
     }
   },
   "rewrites": [
