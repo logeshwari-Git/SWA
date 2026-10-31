@@ -1,0 +1,218 @@
+/* ===============================
+   🌈 Animated Gradient Background
+================================= */
+.premium-bg {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(-45deg, #ff9ecb, #ff5fa2, #cc0066, #80004d);
+  background-size: 400% 400%;
+  animation: gradientMove 12s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ===============================
+   ✨ Floating Sparkles
+================================= */
+.sparkles span {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: sparkleFloat 10s linear infinite;
+}
+
+.sparkles span:nth-child(odd) {
+  width: 4px;
+  height: 4px;
+  animation-duration: 14s;
+}
+
+.sparkles span {
+  top: 100%;
+  left: calc(100% * var(--i));
+}
+
+.sparkles span {
+  left: calc(100% * var(--random));
+}
+
+.sparkles span {
+  left: calc(100% * 0.1);
+}
+
+.sparkles span:nth-child(n) {
+  left: calc(100% * (var(--i, 1) / 25));
+}
+
+.sparkles span {
+  animation: sparkleFloat 8s linear infinite;
+}
+
+@keyframes sparkleFloat {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-120vh);
+    opacity: 0;
+  }
+}
+
+/* ===============================
+   💎 Glassmorphism Card
+================================= */
+.glass-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(18px);
+  border-radius: 24px;
+  padding: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 20px 60px rgba(255, 0, 128, 0.4);
+  position: relative;
+  z-index: 10;
+}
+
+/* ===============================
+   💫 Soft Glow Around Graph
+================================= */
+.heatmap-container {
+  box-shadow:
+    0 0 20px rgba(255, 105, 180, 0.6),
+    0 0 40px rgba(255, 20, 147, 0.4),
+    0 0 80px rgba(255, 0, 128, 0.3);
+  transition: all 0.4s ease;
+}
+
+.heatmap-container:hover {
+  transform: scale(1.02);
+}
+
+/* ===============================
+   💗 Title Styling
+================================= */
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: white;
+  letter-spacing: 1px;
+}
+
+/* ===============================
+   🎀 Heatmap Pink Theme
+================================= */
+.react-calendar-heatmap .color-empty {
+  fill: #2a0018;
+}
+
+.react-calendar-heatmap .color-scale-1 {
+  fill: #ffb3d9;
+}
+
+.react-calendar-heatmap .color-scale-2 {
+  fill: #ff66b3;
+}
+
+.react-calendar-heatmap .color-scale-3 {
+  fill: #ff3399;
+}
+
+.react-calendar-heatmap .color-scale-4 {
+  fill: #e60073;
+}
+
+/* ===============================
+   🔥 Highest Mood Pulse Animation
+================================= */
+.highest-mood {
+  animation: pulsePink 1.6s infinite;
+}
+
+@keyframes pulsePink {
+  0% {
+    stroke: #fff;
+    stroke-width: 1;
+  }
+  50% {
+    stroke: #ffccf2;
+    stroke-width: 4;
+  }
+  100% {
+    stroke: #fff;
+    stroke-width: 1;
+  }
+}
+
+/* ===============================
+   🌙 Auto Dark Mode Support
+================================= */
+@media (prefers-color-scheme: dark) {
+  .glass-card {
+    background: rgba(255, 255, 255, 0.2);
+  }
+}
+
+/* ===============================
+   ✨ Smooth Fade In
+================================= */
+.fade-in {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Final heatmap polish */
+.premium-bg {
+  background:
+    radial-gradient(circle at top left, rgba(255,255,255,0.72), transparent 24%),
+    linear-gradient(180deg, #fff8fa 0%, #fff0f6 56%, #f7efff 100%);
+}
+
+.glass-card,
+.heatmap-container {
+  max-width: 920px;
+  margin: 28px auto;
+  border-radius: 20px;
+  background: #ffffff;
+  border: 1px solid rgba(232, 190, 207, 0.78);
+  box-shadow: 0 18px 42px rgba(140, 82, 110, 0.12);
+}
+
+.heatmap-container:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 24px 52px rgba(140, 82, 110, 0.16);
+}
+
+.title {
+  color: #bd3d6d;
+  letter-spacing: 0;
+  font-weight: 800;
+}
+
+.react-calendar-heatmap .color-empty {
+  fill: #fff1f6;
+}

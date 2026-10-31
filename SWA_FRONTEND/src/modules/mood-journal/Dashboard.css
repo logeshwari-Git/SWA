@@ -1,0 +1,236 @@
+/* 🌸 LIGHT BACKGROUND */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #fde7ef, #ffe0ec);
+  color: #333;
+}
+
+/* Container */
+.dashboard-container {
+  padding: 30px;
+  max-width: 1080px;
+  margin: 0 auto;
+  display: grid;
+  gap: 24px;
+}
+
+/* Profile Section */
+.profile-section {
+  text-align: center;
+  margin: 0 auto 25px;
+  max-width: 760px;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: auto;
+  background: linear-gradient(135deg, #ff4f87, #ff9ac2);
+  box-shadow: 0 0 20px rgba(255, 79, 135, 0.4);
+}
+
+/* Streak */
+.streak {
+  margin-top: 15px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Fire icon */
+.fire-icon {
+  color: #ff4f87;
+  margin-right: 8px;
+  transition: 0.4s ease;
+}
+
+.fire-icon.active {
+  transform: scale(1.3);
+  text-shadow: 0 0 10px #ff4f87;
+}
+
+/* Affirmation */
+.affirmation {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #ff4f87;
+}
+
+/* Mini Mood Bar */
+.mini-mood-bar {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin: 20px 0;
+}
+
+.day {
+  width: 18px;
+  height: 40px;
+  background: #ffd6e8;
+  border-radius: 6px;
+  transition: 0.4s;
+}
+
+.day.active {
+  background: linear-gradient(to top, #ff4f87, #ff9ac2);
+  box-shadow: 0 0 8px #ff4f87;
+}
+
+/* Modules Grid */
+.modules-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 20px;
+}
+
+/* Module Card */
+.module-card {
+  background: #fff0f5;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border: 1px solid #ffe0ec;
+}
+
+.back-btn {
+  align-self: flex-start;
+  margin-bottom: 12px;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #ff85c1, #ffb3d9);
+  color: #5f324d;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 12px 24px rgba(255, 134, 178, 0.18);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.back-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 28px rgba(255, 134, 178, 0.22);
+}
+
+/* Hover Effect */
+.module-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 15px rgba(255, 79, 135, 0.25);
+  background: #ffe4ef;
+}
+
+/* Icons */
+.module-card .icon {
+  font-size: 28px;
+  color: #ff4f87;
+  margin-bottom: 10px;
+}
+
+/* Titles */
+.module-card .title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Unified mood dashboard theme */
+.dashboard-container {
+   background: #fff0f6;
+}
+
+.profile-section {
+  padding: 18px 0 6px;
+}
+
+.avatar {
+ display:none;
+}
+
+.affirmation {
+  font-size: 16px;
+  color: #8a5974;
+}
+
+.modules-grid {
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 18px;
+}
+
+.module-card {
+  min-height: 150px;
+  border-radius: 26px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.96), rgba(255,243,248,0.94));
+  box-shadow: 0 18px 40px rgba(209, 123, 159, 0.12);
+  display: grid;
+  place-items: center;
+}
+
+.module-card .icon {
+  font-size: 32px;
+}
+
+.module-card .title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #5b4759;
+}
+
+/* Final mood dashboard polish */
+.dashboard-container {
+  max-width: 1040px;
+  padding: clamp(18px, 3vw, 34px);
+  background: transparent;
+}
+
+.profile-section {
+  padding: 26px;
+  border: 1px solid rgba(232, 190, 207, 0.78);
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 18px 42px rgba(140, 82, 110, 0.12);
+}
+
+.streak {
+  color: #2f2430;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.affirmation {
+  color: #6f5d68;
+  font-size: 16px;
+}
+
+.mini-mood-bar {
+  padding: 14px;
+  border-radius: 18px;
+  background: #ffffff;
+  border: 1px solid rgba(232, 190, 207, 0.78);
+  box-shadow: 0 12px 28px rgba(140, 82, 110, 0.08);
+}
+
+.day {
+  border-radius: 999px;
+}
+
+.modules-grid {
+  gap: 18px;
+}
+
+.module-card {
+  min-height: 160px;
+  border: 1px solid rgba(232, 190, 207, 0.78);
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 18px 42px rgba(140, 82, 110, 0.12);
+}
+
+.module-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 52px rgba(140, 82, 110, 0.16);
+  background: #fff8fb;
+}

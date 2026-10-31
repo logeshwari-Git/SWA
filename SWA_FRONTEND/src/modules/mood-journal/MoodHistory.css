@@ -1,0 +1,188 @@
+/* 🌸 Animated LIGHT PINK Background */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(-45deg, #fde7ef, #ffe0ec, #ffd6e8, #ffc1dc);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: #333;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Main Container */
+.mood-history {
+  max-width: 650px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 28px;
+  background: #fff0f5;
+  border: 1px solid #ffe0ec;
+  box-shadow: 0 10px 40px rgba(255, 79, 135, 0.15);
+  color: #333;
+}
+
+/* Header */
+.history-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.history-title {
+  font-weight: 600;
+  background: linear-gradient(45deg, #ff4f87, #ff9ac2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Back Button */
+.back-btn {
+  position: absolute;
+  left: 0;
+  padding: 8px 16px;
+  border-radius: 16px;
+  border: none;
+  background: linear-gradient(45deg, #ff6fa5, #ff9ac2);
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(255, 79, 135, 0.3);
+  transition: 0.3s;
+}
+
+.back-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(255, 79, 135, 0.5);
+}
+
+/* Info text */
+.info-text {
+  text-align: center;
+  color: #777;
+}
+
+/* Group Section */
+.group-section {
+  margin-bottom: 25px;
+}
+
+.group-title {
+  margin-bottom: 12px;
+  color: #ff4f87;
+  font-weight: 500;
+}
+
+/* History List */
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* History Card */
+.history-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  border-radius: 18px;
+  background: #ffe4ef;
+  transition: all 0.3s ease;
+}
+
+.history-card:hover {
+  box-shadow: 0 0 20px rgba(255, 79, 135, 0.3);
+}
+
+/* Emoji */
+.emoji {
+  font-size: 2rem;
+}
+
+/* Details */
+.details {
+  display: flex;
+  flex-direction: column;
+}
+
+.details strong {
+  color: #ff4f87;
+}
+
+.date {
+  font-size: 0.85rem;
+  color: #777;
+}
+
+body {
+  background:
+    radial-gradient(circle at top left, rgba(255,255,255,0.72), transparent 24%),
+    linear-gradient(180deg, #fff8fa 0%, #fff0f6 56%, #f7efff 100%);
+}
+
+.mood-history {
+  max-width: 860px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(255,246,249,0.94));
+  box-shadow: 0 22px 48px rgba(209, 123, 159, 0.14);
+}
+
+/* Final mood history polish */
+.mood-history {
+  max-width: 920px;
+  margin: 28px auto;
+  padding: clamp(22px, 3vw, 34px);
+  border-radius: 20px;
+  background: #ffffff;
+  border: 1px solid rgba(232, 190, 207, 0.78);
+  box-shadow: 0 18px 42px rgba(140, 82, 110, 0.12);
+}
+
+.history-header {
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.history-title {
+  color: #bd3d6d;
+  background: none;
+  -webkit-text-fill-color: initial;
+  font-size: clamp(26px, 3vw, 34px);
+  font-weight: 800;
+}
+
+.mood-history .back-btn {
+  position: static;
+  flex: 0 0 auto;
+}
+
+.group-title {
+  color: #bd3d6d;
+  font-weight: 800;
+}
+
+.history-list {
+  gap: 14px;
+}
+
+.history-card {
+  background: #ffffff;
+  border: 1px solid rgba(232, 190, 207, 0.78);
+  border-radius: 16px;
+  box-shadow: 0 10px 24px rgba(140, 82, 110, 0.08);
+}
+
+.history-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 36px rgba(140, 82, 110, 0.14);
+}
+
+.details strong {
+  color: #2f2430;
+}

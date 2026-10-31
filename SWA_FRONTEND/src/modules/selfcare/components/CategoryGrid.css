@@ -1,0 +1,23 @@
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.category-card {
+  border-radius: 18px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+
+  background: linear-gradient(135deg,#ff4f87,#ff9ac2);
+
+  box-shadow: 0 10px 25px rgba(255,79,135,0.3);
+  transition: 0.3s;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+}

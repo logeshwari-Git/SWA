@@ -1,0 +1,261 @@
+.booking-form {
+  max-width: 420px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #fde7ef;
+  border-radius: 10px;
+  border: 1px solid #f2bade;
+  font-family: Arial, sans-serif;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.booking-form:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.booking-form h2 {
+  text-align: center;
+  color: #ff4f87;
+}
+
+.booking-form label {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+.booking-form input,
+.booking-form select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  transition: border-color 0.2s;
+}
+
+.booking-form input:focus,
+.booking-form select:focus {
+  border-color: #ff4f87;
+  outline: none;
+}
+
+.booking-form button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  background: #ff6fa5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.booking-form button:hover {
+  background: #ff9ac2;
+  transform: scale(1.05);
+}
+
+/* Status Card */
+.status-card {
+  max-width: 520px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #fde7ef;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.status-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.status-card h2 {
+  text-align: center;
+  color: #ff4f87;
+}
+
+.status-card p {
+  margin: 8px 0;
+}
+
+.btn-group {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background: #ff6fa5;
+  color: white;
+  transition: transform 0.2s, background 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: #ff9ac2;
+}
+
+button.danger {
+  background: #de3041;
+}
+
+button.danger:hover {
+  background: #ff4f87;
+}
+
+.reschedule-box,
+.suggested-box {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f0f8ff;
+  border-radius: 8px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.reschedule-box:hover,
+.suggested-box:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.reschedule-box input {
+  display: block;
+  width: 100%;
+  margin: 8px 0;
+  padding: 6px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  transition: border-color 0.2s;
+}
+
+.reschedule-box input:focus {
+  border-color: #ff4f87;
+  outline: none;
+}
+
+/* Unified appointment theme */
+.booking-form,
+.status-card,
+.booking-confirmation,
+.appointment-card,
+.dashboard {
+  font-family: "Aptos", "Segoe UI", sans-serif;
+}
+
+.booking-form,
+.status-card,
+.booking-confirmation,
+.appointment-card {
+  max-width: 720px;
+  margin: 28px auto;
+  padding: 30px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(255, 244, 248, 0.94));
+  border-radius: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.92);
+  box-shadow: 0 22px 50px rgba(210, 123, 160, 0.14);
+  cursor: default;
+}
+
+.booking-form:hover,
+.status-card:hover,
+.booking-confirmation:hover,
+.appointment-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 28px 56px rgba(210, 123, 160, 0.18);
+}
+
+.booking-form h2,
+.status-card h2,
+.booking-confirmation h2,
+.dashboard h2 {
+  font-size: 34px;
+  margin-bottom: 22px;
+  color: #ff5a99;
+  letter-spacing: -0.03em;
+}
+
+.booking-form label,
+.status-card label {
+  margin-top: 14px;
+  margin-bottom: 8px;
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #9a6780;
+}
+
+.booking-form input,
+.booking-form select,
+.status-card input,
+.status-card select {
+  padding: 14px 16px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 196, 216, 0.9);
+  background: rgba(255, 255, 255, 0.92);
+}
+
+.btn-group {
+  flex-wrap: wrap;
+}
+
+.reschedule-box,
+.suggested-box {
+  background: linear-gradient(135deg, #fff7fa, #fff1f8 50%, #f6efff);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 219, 231, 0.88);
+}
+
+.dashboard-tabs button,
+.booking-form button,
+.status-card button,
+.booking-buttons button,
+.btn-group button {
+  border-radius: 16px;
+}
+
+/* Final appointment UI polish */
+.booking-form,
+.status-card,
+.booking-confirmation,
+.appointment-card {
+  max-width: 760px;
+  border-radius: 20px;
+  background: #ffffff;
+  border: 1px solid rgba(232, 190, 207, 0.78);
+  box-shadow: 0 18px 42px rgba(140, 82, 110, 0.12);
+}
+
+.booking-form h2,
+.status-card h2,
+.booking-confirmation h2 {
+  color: #bd3d6d;
+  letter-spacing: 0;
+}
+
+.booking-form input,
+.booking-form select,
+.status-card input,
+.status-card select {
+  border-radius: 12px;
+  border-color: rgba(232, 190, 207, 0.78);
+}
+
+.booking-form button,
+.status-card button,
+.booking-buttons button,
+.btn-group button {
+  border-radius: 12px;
+  background: linear-gradient(135deg, #d84a7f, #e98998 56%, #d7a5b9);
+}

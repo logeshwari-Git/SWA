@@ -1,0 +1,25 @@
+﻿{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "services": {
+    "swa_backend": {
+      "root": "SWA_BACKEND"
+    },
+    "swa_frontend": {
+      "root": "SWA_FRONTEND"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": {
+        "service": "swa_backend"
+      }
+    },
+    {
+      "source": "/(.*)",
+      "destination": {
+        "service": "swa_frontend"
+      }
+    }
+  ]
+}

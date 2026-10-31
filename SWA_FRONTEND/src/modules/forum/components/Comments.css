@@ -1,0 +1,78 @@
+.comments-box {
+  margin-top: 12px;
+  padding: 12px;
+  background: #ffe0ec;
+  border-radius: 15px;
+}
+
+/* Each comment */
+.comment-item {
+  margin-bottom: 10px;
+  padding: 10px;
+  background: #fff0f5;
+  border-radius: 10px;
+}
+
+/* Header */
+.comment-header {
+  font-size: 12px;
+  color: #7a3cff;
+  margin-bottom: 4px;
+}
+
+/* Text */
+.comment-text {
+  font-size: 14px;
+  color: #333;
+}
+
+/* Like button */
+.comment-actions button {
+  border: none;
+  background: #ffd6e8;
+  border-radius: 15px;
+  padding: 4px 10px;
+  cursor: pointer;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+/* Input */
+.comment-input {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.comment-input input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ffd0df;
+  background: #fff0f5;
+}
+
+.error-text {
+  color: #ff4f87;
+  font-size: 13px;
+  margin-top: 6px;
+  font-weight: 500;
+}
+
+.comment-input button {
+  background: linear-gradient(90deg, #ff6fa5, #ff9ac2);
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.comments-box {
+  background: linear-gradient(180deg, #fff7fa, #fff0f6);
+  border: 1px solid rgba(255, 216, 230, 0.84);
+}
+
+.comment-item {
+  background: rgba(255,255,255,0.88);
+}
